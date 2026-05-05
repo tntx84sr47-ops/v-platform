@@ -1,0 +1,21 @@
+# Streamlit native theme — fallback that matches our custom CSS.
+# Our CSS overrides most of Streamlit's UI, but config.toml ensures the theme
+# is correct even before scripts/CSS load (e.g. spinners, default widgets).
+
+[theme]
+base                 = "dark"
+primaryColor         = "#06b6d4"     # cyan-500 — primary actions
+backgroundColor      = "#06080f"     # deep navy — app background
+secondaryBackgroundColor = "#0f1a2e" # slightly lighter — sidebar / cards
+textColor            = "#e2e8f0"     # slate-200 — body text
+font                 = "sans serif"
+
+[server]
+headless             = true
+runOnSave            = true
+
+[browser]
+gatherUsageStats     = false
+
+[client]
+toolbarMode          = "minimal"
